@@ -1,0 +1,118 @@
+{
+  "comment": "Example success response from POST /flashcards/{file_id}?count=10",
+  
+  "success_response_first_generation": {
+    "flashcard_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "cards": [
+      {
+        "front": "What is Photosynthesis?",
+        "back": "The process by which plants convert light energy into chemical energy stored in glucose"
+      },
+      {
+        "front": "Chloroplasts",
+        "back": "Organelles in plant cells where photosynthesis takes place, containing chlorophyll"
+      },
+      {
+        "front": "What are the two main stages of photosynthesis?",
+        "back": "Light-dependent reactions (light reactions) and light-independent reactions (Calvin cycle)"
+      },
+      {
+        "front": "What raw materials does a plant need for photosynthesis?",
+        "back": "Carbon dioxide (CO2) from the air and water (H2O) from the soil"
+      },
+      {
+        "front": "Thylakoids",
+        "back": "Membrane-bound compartments inside chloroplasts where the light reactions occur"
+      },
+      {
+        "front": "What is the primary product of photosynthesis?",
+        "back": "Glucose (C6H12O6), a simple sugar that serves as food for the plant"
+      },
+      {
+        "front": "Stomata",
+        "back": "Tiny pores on the surface of leaves that allow gas exchange (CO2 in, O2 out)"
+      },
+      {
+        "front": "What is the role of chlorophyll in photosynthesis?",
+        "back": "Chlorophyll is a green pigment that absorbs light energy, primarily red and blue wavelengths"
+      },
+      {
+        "front": "Calvin Cycle",
+        "back": "The light-independent stage of photosynthesis where CO2 is converted into glucose"
+      },
+      {
+        "front": "What is the byproduct of photosynthesis that is released into the atmosphere?",
+        "back": "Oxygen (O2), which is essential for respiration in animals and humans"
+      }
+    ],
+    "card_count": 10,
+    "cached": false,
+    "filename": "photosynthesis_lecture_notes.pdf"
+  },
+
+  "success_response_cached": {
+    "flashcard_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "cards": [
+      {
+        "front": "What is Photosynthesis?",
+        "back": "The process by which plants convert light energy into chemical energy stored in glucose"
+      },
+      {
+        "front": "Chloroplasts",
+        "back": "Organelles in plant cells where photosynthesis takes place, containing chlorophyll"
+      }
+    ],
+    "card_count": 10,
+    "cached": true,
+    "created_at": "2024-10-01T14:30:45.123Z"
+  },
+
+  "error_responses": {
+    "file_not_found": {
+      "detail": "File not found or access denied"
+    },
+    
+    "no_text_content": {
+      "detail": "File has no extractable text"
+    },
+    
+    "count_too_low": {
+      "detail": [
+        {
+          "loc": ["query", "count"],
+          "msg": "ensure this value is greater than or equal to 5",
+          "type": "value_error.number.not_ge"
+        }
+      ]
+    },
+    
+    "count_too_high": {
+      "detail": [
+        {
+          "loc": ["query", "count"],
+          "msg": "ensure this value is less than or equal to 30",
+          "type": "value_error.number.not_le"
+        }
+      ]
+    },
+    
+    "ai_model_error": {
+      "detail": "AI service error - unable to generate flashcards at this time"
+    },
+    
+    "insufficient_flashcards": {
+      "detail": "AI model failed to generate sufficient flashcards"
+    }
+  },
+
+  "delete_response": {
+    "message": "Flashcards deleted successfully. Call flashcards endpoint again to generate new flashcards.",
+    "file_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+  },
+
+  "delete_error_not_found": {
+    "detail": "No flashcards found for this file"
+  }
+}
+
+

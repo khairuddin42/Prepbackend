@@ -1,0 +1,17 @@
+This is a test lecture note about machine learning.
+
+Machine learning is a subset of artificial intelligence that focuses on algorithms that can learn from data. There are three main types:
+
+1. Supervised Learning: Learning with labeled examples
+2. Unsupervised Learning: Finding patterns in unlabeled data  
+3. Reinforcement Learning: Learning through trial and error
+
+Key concepts include:
+- Training data
+- Model validation
+- Overfitting prevention
+- Feature engineering
+
+This content can be used to generate summaries, quizzes, and flashcards.
+
+
