@@ -13,4 +13,4 @@ supabase==2.3.4
 transformers==4.36.0
 torch==2.9.0
 torchvision==0.24.0
-torchaudio==2.7.1+cu118
+torchaudio==2.9.0
