@@ -11,6 +11,6 @@ pytesseract==0.3.10
 Pillow>=9.0.0
 supabase==2.3.4
 transformers==4.36.0
-torch==2.7.1+cu118
+torch==2.9.0
 torchvision==0.22.1+cu118
 torchaudio==2.7.1+cu118
