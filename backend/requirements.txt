@@ -3,6 +3,7 @@ uvicorn[standard]==0.24.0
 python-dotenv==1.0.0
 httpx==0.25.2
 pydantic==2.10.3
+pydantic-settings==2.7.0
 email-validator==2.1.0
 pdfplumber==0.10.3
 PyPDF2==3.0.1
