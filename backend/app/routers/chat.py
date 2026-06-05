@@ -740,11 +740,12 @@ Always be helpful, clear, and educational."""
                 context_parts.append("===\n")
             
             if current_questions and len(current_questions) > 0:
+                total_count = len(current_questions)
                 if selected_question:
-                    context_parts.append("\nAll quiz questions (for context):")
+                    context_parts.append(f"\nAll quiz questions ({total_count} total, for context):")
                 else:
-                    context_parts.append("\nCurrent quiz questions:")
-                for i, q in enumerate(current_questions[:5], 1):  # Limit to first 5 for context
+                    context_parts.append(f"\nCurrent quiz questions ({total_count} total):")
+                for i, q in enumerate(current_questions[:50], 1):  # Include up to 50 for context
                     context_parts.append(f"\nQuestion {i}: {q.get('question', '')}")
                     options = q.get('options', [])
                     if options:
